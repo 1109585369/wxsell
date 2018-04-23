@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: yuyuan
+    url: jdbc:mysql://localhost/wxsell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+server:
+  servlet:
+    context-path: /wxsell
+#logging:
+#pattern:
+#console: "%d - %msg%n"
+#path: /var/log/tomcat/
+#file: /var/log/tomcat/sell.log
+#level: debug

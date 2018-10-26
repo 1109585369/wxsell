@@ -87,7 +87,7 @@ public class OrderServiceImpl implements OrderService {
         //4.扣库存
 
         List<CartDTO> cartDTOList = orderDTO.getOrderDetailList().stream().map(e ->new CartDTO(e.getProductId(),e.getProductQuantity())).collect(Collectors.toList());
-        productService.decreateStock(cartDTOList);
+        productService.deCreateStock(cartDTOList);
 
 
        return null;

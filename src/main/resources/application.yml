@@ -9,6 +9,7 @@ spring:
 server:
   servlet:
     context-path: /wxsell
+  port: 8090  
 #logging:
 #pattern:
 #console: "%d - %msg%n"
